@@ -1,0 +1,155 @@
+.body-section {
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.side-2 {
+  font-size: 16px;
+  font-size: 1rem; }
+  .side-2 ul.list {
+    padding-left: 5px;
+    list-style: none; }
+    .side-2 ul.list .sublist {
+      font-size: 14px;
+      font-size: 0.875rem;
+      padding-left: 25px; }
+  .side-2 ul.tags {
+    padding-left: 25px; }
+    .side-2 ul.tags li {
+      text-transform: capitalize; }
+
+.center-2 .blog-page .page-title {
+  background-color: #999085;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 2px 5px; }
+  .center-2 .blog-page .page-title h1 {
+    font-size: 24px;
+    font-size: 1.5rem; }
+  .center-2 .blog-page .page-title a.link-rss {
+    color: #fff; }
+.center-2 .blog-page .blog-posts a.post-title {
+  color: #114f72; }
+.center-2 .blog-page .blog-posts .post-date {
+  font-style: italic;
+  color: #555555; }
+.center-2 .blog-page .pager {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+  .center-2 .blog-page .pager ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .center-2 .blog-page .pager ul li {
+      display: inline;
+      border: 1px #ddd solid;
+      padding: 3px 0px; }
+      .center-2 .blog-page .pager ul li a {
+        padding: 7px 13px; }
+      .center-2 .blog-page .pager ul li a:hover {
+        background-color: #999085;
+        color: #fff; }
+    .center-2 .blog-page .pager ul li.current-page {
+      padding: 7px 15px; }
+
+.page-image {
+  color: #fff;
+  background: url("../../Images/Home/GCGChinaB2B/boat.jpg") no-repeat top center fixed;
+  background-color: rebeccapurple;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
+  .page-image .home-main-text {
+    font-size: 48px;
+    font-size: 3rem;
+    padding: 90px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.about-us {
+  font-size: 22px;
+  font-size: 1.375rem;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+
+/*** China section*/
+.gcg-china {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-size: 1.375rem; }
+  .gcg-china .beef, .gcg-china .pork, .gcg-china .chicken, .gcg-china .nuts, .gcg-china .beer, .gcg-china .oil {
+    padding: 30px 0;
+    margin-top: 20px; }
+    .gcg-china .beef .container, .gcg-china .pork .container, .gcg-china .chicken .container, .gcg-china .nuts .container, .gcg-china .beer .container, .gcg-china .oil .container {
+      display: flex;
+      flex-grow: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      @media (max-width: 767px) {
+        .gcg-china .beef .container, .gcg-china .pork .container, .gcg-china .chicken .container, .gcg-china .nuts .container, .gcg-china .beer .container, .gcg-china .oil .container {
+          justify-content: space-around; } }
+      .gcg-china .beef .container h3, .gcg-china .pork .container h3, .gcg-china .chicken .container h3, .gcg-china .nuts .container h3, .gcg-china .beer .container h3, .gcg-china .oil .container h3 {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 48px;
+        font-size: 3rem; }
+      .gcg-china .beef .container img.full-width, .gcg-china .pork .container img.full-width, .gcg-china .chicken .container img.full-width, .gcg-china .nuts .container img.full-width, .gcg-china .beer .container img.full-width, .gcg-china .oil .container img.full-width {
+        width: 100%; }
+      .gcg-china .beef .container .item, .gcg-china .pork .container .item, .gcg-china .chicken .container .item, .gcg-china .nuts .container .item, .gcg-china .beer .container .item, .gcg-china .oil .container .item {
+        margin-bottom: 20px;
+        padding: 0 10px; }
+        .gcg-china .beef .container .item img, .gcg-china .pork .container .item img, .gcg-china .chicken .container .item img, .gcg-china .nuts .container .item img, .gcg-china .beer .container .item img, .gcg-china .oil .container .item img {
+          width: 100%; }
+        @media (min-width: 768px) {
+          .gcg-china .beef .container .item, .gcg-china .pork .container .item, .gcg-china .chicken .container .item, .gcg-china .nuts .container .item, .gcg-china .beer .container .item, .gcg-china .oil .container .item {
+            flex: 0 1 50%; } }
+        @media (max-width: 767px) {
+          .gcg-china .beef .container .item, .gcg-china .pork .container .item, .gcg-china .chicken .container .item, .gcg-china .nuts .container .item, .gcg-china .beer .container .item, .gcg-china .oil .container .item {
+            flex: 0 1 90%; } }
+        .gcg-china .beef .container .item .other-chicken, .gcg-china .pork .container .item .other-chicken, .gcg-china .chicken .container .item .other-chicken, .gcg-china .nuts .container .item .other-chicken, .gcg-china .beer .container .item .other-chicken, .gcg-china .oil .container .item .other-chicken {
+          width: 300px;
+          height: 300px;
+          background-color: yellow;
+          border-radius: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 28px;
+          font-size: 1.75rem; }
+      .gcg-china .beef .container .item.full, .gcg-china .pork .container .item.full, .gcg-china .chicken .container .item.full, .gcg-china .nuts .container .item.full, .gcg-china .beer .container .item.full, .gcg-china .oil .container .item.full {
+        flex: 1 1 100%; }
+      .gcg-china .beef .container .real-images, .gcg-china .pork .container .real-images, .gcg-china .chicken .container .real-images, .gcg-china .nuts .container .real-images, .gcg-china .beer .container .real-images, .gcg-china .oil .container .real-images {
+        justify-content: space-around; }
+        .gcg-china .beef .container .real-images .image-wrapper, .gcg-china .pork .container .real-images .image-wrapper, .gcg-china .chicken .container .real-images .image-wrapper, .gcg-china .nuts .container .real-images .image-wrapper, .gcg-china .beer .container .real-images .image-wrapper, .gcg-china .oil .container .real-images .image-wrapper {
+          flex: 0 0 15%; }
+          .gcg-china .beef .container .real-images .image-wrapper img, .gcg-china .pork .container .real-images .image-wrapper img, .gcg-china .chicken .container .real-images .image-wrapper img, .gcg-china .nuts .container .real-images .image-wrapper img, .gcg-china .beer .container .real-images .image-wrapper img, .gcg-china .oil .container .real-images .image-wrapper img {
+            width: 100%; }
+  .gcg-china .beef, .gcg-china .chicken, .gcg-china .light-background {
+    background: #e5e5e5; }
+  .gcg-china .oil .container .item {
+    flex: 0 0 20%; }
+    .gcg-china .oil .container .item .oil-caption {
+      text-align: center; }
+
+/*** Contact Section*/
+#contact {
+  background-color: #efefef;
+  padding: 20px 0;
+  font-size: 14px;
+  font-size: 0.875rem; }
+  #contact #map {
+    height: 300px;
+    width: 100%; }
+
+/*# sourceMappingURL=Blog.css.map */
