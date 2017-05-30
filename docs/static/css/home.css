@@ -9,7 +9,7 @@
 
 .page-image {
   color: #fff;
-  background: url("../img/Home.jpg") no-repeat top center;
+  background: url("../img/home.jpg") no-repeat top center;
   background-color: rebeccapurple;
   background-size: cover;
   display: flex;
@@ -40,7 +40,7 @@
       .about-us .real-images .image-wrapper img {
         width: 100%; }
 
-/*** China section*/
+/*** China section aaaa*/
 .beef-intro {
   display: flex;
   flex-direction: column;
