@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+   
+        {
+            "name": "node gulp.js ..",
+            "type": "node",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+            "cwd": "${workspaceRoot}",
+            "args": [
+             ]
+
+        }
+  
+    ]
+}
