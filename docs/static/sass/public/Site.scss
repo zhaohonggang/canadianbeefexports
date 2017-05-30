@@ -1,0 +1,187 @@
+﻿//@import '../bourbon/bourbon';
+//@import '../font-awesome/font-awesome.scss';
+@import "../base/_constants.scss";
+@import "../base/_mixins.scss";
+
+html {
+    @include font-size(16px);
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font: {
+        size: 100%;
+        family: $primary-font;
+
+        // variables inside partials > _variables.scss
+    };
+    color: $color-main;
+    background-color: $bgcolor-body;
+}
+
+body, html {
+    height: 100%;
+}
+
+a {
+    color: $color-main;
+}
+
+.header {
+    background-color: #bb0000;
+    color: white; 
+     .cn-sub {
+        @include font-size(16px);
+
+        padding: 10px 0;
+        display: block;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-top: 20px;
+    }
+
+    .header-menu {
+        justify-content: center;
+
+        ul.nav li.dropdown:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        .page-menu {
+            flex: 1 0 auto; 
+        }
+
+        .login {
+            flex: 0 0 auto;
+        }
+    }
+
+    .navbar {
+        padding: 0px ;
+    }
+
+    .nav-item {
+        margin-right: 30px;
+    }
+
+    .nav-item:hover {
+        background-color: black;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+}
+
+.body-section {
+    text-align: justify;
+    clear: both;
+}
+
+footer {
+    background-color: $bgcolor-footer;
+    color: $color-white;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    .social-media {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+
+            //border-radius: 50%;
+            //border: 1px groove;
+            margin: 0 10px;
+        }
+
+        .fa:hover {
+            color: inherit;
+        }
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+
+            &:hover {
+                background-color: #4970c1;
+            }
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #5a99c9;
+
+            &:hover {
+                background-color: #70bef9;
+            }
+        }
+
+        .fa-youtube {
+            background-color: #bb0000;
+
+            &:hover {
+                background-color: #e50000;
+            }
+        }
+
+        .fa-rss {
+            background-color: #ff6600;
+
+            &:hover {
+                background-color: #ff8c00;
+            }
+        }
+
+        .fa-linkedin {
+            background-color: #007bb5;
+
+            &:hover {
+                background-color: #0091d6;
+            }
+        }
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    #policy {
+        color: $color-main;
+    }
+
+    a {
+        color: $color-white;
+    }
+}
+
+/***Navigation & Bootstrap over-riding**/
+.container {
+    @include breakpoint(sm) {
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+
+    @include breakpoint(md) {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/***End - Navigation - Bootstrap over-riding**/
