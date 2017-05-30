@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,sBAAsB;AACtB,WAAY;EACV,eAAe,EAAE,MAAM;EACvB,UAAU,EAAC,IAAI;EACf,wBAAa;IACX,MAAM,EAAE,SAAS",
-"sources": ["../sass/public/Account.scss"],
-"names": [],
-"file": "Account.css"
-}

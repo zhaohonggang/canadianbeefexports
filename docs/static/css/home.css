@@ -9,7 +9,7 @@
 
 .page-image {
   color: #fff;
-  background: url("../static/img/home.jpg") no-repeat top center;
+  background: url("../img/home.jpg") no-repeat top center;
   background-color: rebeccapurple;
   background-size: cover;
   display: flex;
