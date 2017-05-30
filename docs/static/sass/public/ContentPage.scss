@@ -1,0 +1,451 @@
+﻿@import '../base/_constants.scss';
+@import '../base/_mixins.scss';
+
+
+.content-page-head {
+  height: 40%;
+  min-height: 200px;
+  margin-top: 80px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: flex-end; //default right adjustment
+  /*align-items: center;*/
+  .home-main-text {
+    @include font-size(36px);
+    font-weight: 700;
+    /*@include transform(translateX(-50%) translateY(100%));*/
+    margin-top: 20%;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-title;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  h2 { //the text on the image
+    /*background-color: #111;
+    opacity: 0.5;
+    padding: 10px 20px 10px 5px;
+    border-radius: 6px;
+    */
+    color: $color-content-subtitle;
+    text-align: right;
+    text-transform: capitalize;
+    @include font-size(42px);
+    line-height: 2.8rem;
+
+    @include breakpoint("sm") {
+      max-width: 60%;
+      margin: auto 3%;
+    }
+
+    @include breakpoint("md") {
+      max-width: 50%;
+      margin: auto 5%;
+    }
+
+    @include breakpoint("lg") {
+      max-width: 40%;
+      margin: auto 5%;
+    }
+
+    @include breakpoint("xs") {
+      max-width: 100%;
+      margin: auto 1%;
+    }
+
+    .sub {
+      display: block;
+      margin: 10px 0 20px;
+      @include font-size(28px);
+      line-height: 2rem;
+    }
+
+    .sub1 {
+      @extend .sub;
+      @include font-size(20px);
+    }
+  }
+}
+
+.content-page-head.right {
+  justify-content: flex-end;
+}
+
+.content-page-head.left {
+  justify-content: flex-start;
+}
+
+.content-page-head {
+  h2.reverse {
+    color: $color-title1;
+
+    .sub, sub1 {
+      color: $color-white;
+    }
+  }
+}
+
+.content-page-wrapper {
+
+  .page-main-description {
+    @include font-size(20px);
+    /*margin: 10px 0;*/
+  }
+}
+
+
+
+.content-page-head.gcgchina {
+  background: url("../Images/GCGChina/GCGChinaB2B.jpg") no-repeat top center fixed;
+}
+
+section {
+  .wordings {
+    @include font-size(24px);
+    margin-bottom: 20px;
+  }
+
+  video {
+  }
+
+  .full-video {
+    width: 100% !important;
+  }
+
+  ul.list-unstyled {
+    padding-left: 20px;
+  }
+}
+
+/** About us*/
+.content-page-head.aboutus {
+  background: url("../Images/About us/banner.jpg") no-repeat top center fixed;
+}
+
+.video-mask {
+  background-image: url("../../Images/play.png");
+  background-repeat: no-repeat;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
+/**End about us*/
+
+/** Member (Management page) ***/
+.content-page-head.management {
+  background: url("../Images/Team/banner.jpg") no-repeat top center fixed;
+}
+
+.members-page {
+  @include font-size(20px);
+
+  .member_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .row {
+    margin: 10px 0px;
+    padding: 20px;
+  }
+
+  .row:nth-child(2n) {
+    background: #eee;
+    border-radius: 20px;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    color: $color-title;
+    @include font-size(36px);
+  }
+
+  h3 {
+    @include font-size(24px);
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    @include font-size(24px);
+  }
+
+  p {
+    @include font-size(18px);
+  }
+}
+/** End - Member (Management page) ***/
+
+
+/** Finance page ***/
+.content-page-head.fs {
+  background: no-repeat top center fixed;
+}
+.content-page-head.fs.home {
+  background-image: url("../Images/Financial Service/banner.jpg");
+  width: 100%;
+}
+.content-page-head.fs.purchase {
+  background-image: url("../Images/Financial Service/financial2.jpg");
+  width: 100%;
+}
+
+.content-page-head.fs.ecommerce {
+  background-image: url("../Images/Financial Service/financial1.jpg");
+  width: 100%;
+}
+
+.content-page-head.fs.mf { // Mezzanine Financing
+  background-image: url("../Images/Financial Service/financial3.jpg");
+  width: 100%;
+}
+
+.content-page-head.fs.ar { // AR
+  background-image: url("../Images/Financial Service/ar-banner.jpg");
+  width: 100%;
+}
+
+.content-page-head.fs.cc {
+  background-image: url("../Images/Financial Service/financial4.jpg");
+  width: 100%;
+}
+
+.content-page-head.fs.jointventure {
+  background-image: url("../Images/Financial Service/financial6.jpg");
+  width: 100%;
+}
+
+.finance-page {
+  .finance-page-content {
+    line-height: 1.8rem;
+
+    div{
+      margin-bottom:20px;
+    }
+    .row {
+      margin: 2rem 0;
+    }
+
+    a {
+      color: $color-title;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    h3.heading-sm {
+      @include font-size(20px);
+    }
+
+    .text-box {
+      width: 90%;
+      height: 150px;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      span {
+        padding: 20px;
+        display: block;
+        color: $color-white;
+      }
+    }
+
+    .color-blue {
+      background: $color-title1;
+    }
+
+    .color-orange {
+      background: #e77d03;
+    }
+
+    ul.list-unstyled-withicon {
+      margin-top: 30px;
+
+      li {
+        display: inline-block;
+        width: 19%;
+        min-height: 200px;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: capitalize;
+        color: $color-title1;
+
+        @include breakpoint(xs) {
+          width: 49%;
+        }
+
+        @include breakpoint(md) {
+          width: 19%;
+        }
+      }
+
+      $elements: 6;
+
+      @for $i from 1 to $elements {
+        $img: "../Images/Financial Service/jvicon"+$i+".png";
+
+        li:nth-child(#{$i})::before {
+          content: "";
+          text-align: center;
+          background: url($img) no-repeat center;
+          background-size: contain;
+          width: 100%;
+          height: 90px;
+          margin-bottom: 20px;
+          display: block;
+        }
+      }
+      /*li:nth-child(n)::before {
+        content: "";
+        background: url("../Images/Financial Service/icon{$n}.png") no-repeat center;
+        width: 100px;
+        height: 100px;
+        display: block;
+      }*/
+    }
+    /**Ecommerce***/
+    ul.ec-coloredbg {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      li {
+        min-height: 120px;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+        color: $color-title;
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 10px;
+
+
+        @include breakpoint(sm) {
+          width: 49%;
+        }
+
+        @include breakpoint(md) {
+          width: 23%;
+        }
+
+        @include breakpoint(xs) {
+          width: 85%;
+        }
+      }
+
+      $colorlist: (#7ad0e5, #aed9d7, #e1e2cc, #eb8a40); // blue, light blue, yellow, orange
+      @for $i from 1 to length($colorlist)+1 {
+        //$colorlist:(#7ad0e5, #aed9d7, #e1e2cc, #eb8a40); // blue, light blue, yellow, orange
+        li:nth-child(#{$i}) {
+          background-color: nth($colorlist, $i);
+        }
+      }
+    }
+    /**Virtual payment***/
+    .cc-text {
+      @include breakpoint(sm) {
+        /*margin-top: 20px;*/
+      }
+
+      @include breakpoint(md) {
+        /*margin-top: 60px;*/
+      }
+    }
+
+    .cc-image img {
+      width: 100%;
+    }
+    /**** AR *****/
+    .image-display {
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      .ar-box {
+        border: 1px solid #F6A623;
+        padding: 10px;
+
+        @include breakpoint(xs) {
+          width: 100%;
+        }
+
+        @include breakpoint(sm) {
+          width: 44%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .ar-plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint(xs) {
+          height: 20%;
+        }
+
+        @include breakpoint(sm) {
+          width: 10%;
+        }
+
+        img {
+          vertical-align: middle;
+
+          @include breakpoint(xs) {
+            width: 25%;
+          }
+
+          @include breakpoint(sm) {
+            width: 50%;
+            height: 25%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/** End - Finance page ***/
+
+
+/** Contact ***/
+.content-page-head.contact {
+  background: url("../Images/About us/banner.jpg") no-repeat top center fixed;
+}
+
+.contact {
+  @include font-size(18px);
+  margin: 30px 0;
+
+  #map {
+    min-height: 450px;
+  }
+}
+/** End - Contact ***/
+
