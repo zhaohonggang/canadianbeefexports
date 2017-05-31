@@ -46,7 +46,7 @@ a {
     }
 
     .header-menu {
-        justify-content: center;
+        justify-content: space-between;
 
         ul.nav li.dropdown:hover > ul.dropdown-menu {
             display: block;
@@ -56,8 +56,10 @@ a {
             flex: 1 0 auto; 
         }
 
-        .login {
-            flex: 0 0 auto;
+        .headlogo {
+            width: 60px;
+            height: 70px;
+            margin-top: 8px; 
         }
     }
 
@@ -67,6 +69,7 @@ a {
 
     .nav-item {
         margin-right: 30px;
+        text-transform: uppercase;
     }
 
     .nav-item:hover {
@@ -88,7 +91,8 @@ footer {
     color: $color-white;
     margin-top: 30px;
     padding-top: 20px;
-
+    #contact img#logofooter {
+        width: 150px; }
     .social-media {
         padding-top: 20px;
         display: flex;

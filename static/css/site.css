@@ -60,6 +60,47 @@ footer {
   padding-top: 20px; }
   footer #contact img#logofooter {
     width: 150px; }
+  footer .social-media {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Facebook */
+    /* Twitter */ }
+    footer .social-media .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0 10px; }
+    footer .social-media .fa:hover {
+      color: inherit; }
+    footer .social-media .fa-facebook {
+      background: #3B5998;
+      color: white; }
+      footer .social-media .fa-facebook:hover {
+        background-color: #4970c1; }
+    footer .social-media .fa-twitter {
+      background: #5a99c9; }
+      footer .social-media .fa-twitter:hover {
+        background-color: #70bef9; }
+    footer .social-media .fa-youtube {
+      background-color: #bb0000; }
+      footer .social-media .fa-youtube:hover {
+        background-color: #e50000; }
+    footer .social-media .fa-rss {
+      background-color: #ff6600; }
+      footer .social-media .fa-rss:hover {
+        background-color: #ff8c00; }
+    footer .social-media .fa-linkedin {
+      background-color: #007bb5; }
+      footer .social-media .fa-linkedin:hover {
+        background-color: #0091d6; }
+  footer .copyright {
+    padding-top: 20px; }
+  footer #policy {
+    color: #555555; }
   footer a {
     color: #fff; }
 
@@ -68,6 +109,7 @@ footer {
   .container {
     padding-right: 1px;
     padding-left: 1px; } }
+
 @media (min-width: 992px) {
   .container {
     padding-right: 15px;
@@ -76,5 +118,3 @@ footer {
     margin-left: auto; } }
 
 /***End - Navigation - Bootstrap over-riding**/
-
-/*# sourceMappingURL=Site.css.map */

@@ -80,8 +80,10 @@ section .wordings {
   font-size: 24px;
   font-size: 1.5rem;
   margin-bottom: 20px; }
+
 section .full-video {
   width: 100% !important; }
+
 section ul.list-unstyled {
   padding-left: 20px; }
 
@@ -206,12 +208,12 @@ section ul.list-unstyled {
   .finance-page .finance-page-content ul.list-unstyled-withicon {
     margin-top: 30px;
     /*li:nth-child(n)::before {
-      content: "";
-      background: url("../Images/Financial Service/icon{$n}.png") no-repeat center;
-      width: 100px;
-      height: 100px;
-      display: block;
-    }*/ }
+        content: "";
+        background: url("../Images/Financial Service/icon{$n}.png") no-repeat center;
+        width: 100px;
+        height: 100px;
+        display: block;
+      }*/ }
     .finance-page .finance-page-content ul.list-unstyled-withicon li {
       display: inline-block;
       width: 19%;
@@ -360,5 +362,3 @@ section ul.list-unstyled {
     min-height: 450px; }
 
 /** End - Contact ***/
-
-/*# sourceMappingURL=ContentPage.css.map */

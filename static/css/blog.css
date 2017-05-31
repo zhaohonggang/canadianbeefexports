@@ -29,11 +29,14 @@
     font-size: 1.5rem; }
   .center-2 .blog-page .page-title a.link-rss {
     color: #fff; }
+
 .center-2 .blog-page .blog-posts a.post-title {
   color: #114f72; }
+
 .center-2 .blog-page .blog-posts .post-date {
   font-style: italic;
   color: #555555; }
+
 .center-2 .blog-page .pager {
   display: flex;
   justify-content: center;
@@ -151,5 +154,3 @@
   #contact #map {
     height: 300px;
     width: 100%; }
-
-/*# sourceMappingURL=Blog.css.map */
